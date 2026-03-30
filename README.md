@@ -24,9 +24,9 @@
 
 ## Problem Statement
 
-Emergency rooms operate under relentless pressure — every minute of unnecessary waiting carries both human and financial cost. This analysis examines **9,216 ER visits** across 18 months (April 2019 – October 2020) to identify when patient demand peaks, where the system strains, and which structural patterns drive poor outcomes.
+Emergency rooms operate under relentless pressure - every minute of unnecessary waiting carries both human and financial cost. This analysis examines **9,216 ER visits** across 18 months (April 2019 - October 2020) to identify when patient demand peaks, where the system strains, and which structural patterns drive poor outcomes.
 
-With an average wait time of **35.26 minutes** and a **50% admission rate**, this is not a minor care facility handling walk-in complaints. Half the patients coming through are being admitted — meaning the ER is continuously feeding a downstream ward system that must absorb whatever the ER sends it.
+With an average wait time of **35.26 minutes** and a **50% admission rate**, this is not a minor care facility handling walk-in complaints. Half the patients coming through are being admitted - meaning the ER is continuously feeding a downstream ward system that must absorb whatever the ER sends it.
 
 > **Key Question:** *When does the ER come under the most pressure, which patient groups are most affected, and where does the data point toward actionable operational change?*
 
@@ -46,12 +46,12 @@ With an average wait time of **35.26 minutes** and a **50% admission rate**, thi
 ## Dashboard Features
 
 - **3 KPI Cards with Sparklines & MoM Change** — Patient visits, average wait time, and average satisfaction score with month-over-month % change indicators
-- **Patients by Weekday and Gender** — Dual-line chart comparing male and female visit patterns across the week
-- **Patients by Age Range** — Grouped bar chart across Adults, Children, and Seniors
-- **24-Hour × 7-Day Heat Map** — Full visit density matrix by hour and day, with dynamic DAX-powered busiest day and time callouts
-- **Satisfaction Score by Race** — Ranked table with star ratings across 7 demographic groups
-- **Avg Wait Time by Department Referral** — Horizontal bar chart from highest to lowest wait per department
-- **Year and Month Slicers** — Left-panel filters making the entire dashboard context-aware
+- **Patients by Weekday and Gender** - Dual-line chart comparing male and female visit patterns across the week
+- **Patients by Age Range** - Grouped bar chart across Adults, Children, and Seniors
+- **24-Hour × 7-Day Heat Map** - Full visit density matrix by hour and day, with dynamic DAX-powered busiest day and time callouts
+- **Satisfaction Score by Race** - Ranked table with star ratings across 7 demographic groups
+- **Avg Wait Time by Department Referral** - Horizontal bar chart from highest to lowest wait per department
+- **Year and Month Slicers** - Left-panel filters making the entire dashboard context-aware
 
 ---
 
@@ -70,7 +70,7 @@ With an average wait time of **35.26 minutes** and a **50% admission rate**, thi
 
 ### Patient Volume Patterns
 
-**Monday is the single busiest day** with 1,377 visits — 9% more than Friday (1,260), the quietest day. However, the dashboard's dynamic DAX measure reveals that the busiest day shifts across time periods: Wednesday at 11:00 AM dominates in 2020, while Saturday at 3:00 PM leads in 2019. A static weekly rota misses this temporal variation entirely.
+**Monday is the single busiest day** with 1,377 visits - 9% more than Friday (1,260), the quietest day. However, the dashboard's dynamic DAX measure reveals that the busiest day shifts across time periods: Wednesday at 11:00 AM dominates in 2020, while Saturday at 3:00 PM leads in 2019. A static weekly rota misses this temporal variation entirely.
 
 The five **peak arrival hours by volume** are:
 
@@ -82,7 +82,7 @@ The five **peak arrival hours by volume** are:
 | 12 AM (00:00) | 406 |
 | 11 AM | 403 |
 
-Late-night and early-morning surges are as significant as afternoon peaks — the ER does not have a predictable "quiet period" that could reliably absorb staffing reductions.
+Late-night and early-morning surges are as significant as afternoon peaks - the ER does not have a predictable "quiet period" that could reliably absorb staffing reductions.
 
 ### Wait Times: Systemic, Not Departmental
 
@@ -98,7 +98,7 @@ Average wait times across all department referrals are strikingly uniform:
 | General Practice | 34.91 | 5.06 |
 | Renal | 34.70 | **4.57** |
 
-The 2.1-minute spread between the highest (Neurology, 36.8) and lowest (Renal, 34.7) wait departments is negligible. This rules out any single department as the bottleneck — the constraint is **overall ER capacity**, not a specific clinical pathway. Targeted departmental fixes will not materially improve performance.
+The 2.1-minute spread between the highest (Neurology, 36.8) and lowest (Renal, 34.7) wait departments is negligible. This rules out any single department as the bottleneck - the constraint is **overall ER capacity**, not a specific clinical pathway. Targeted departmental fixes will not materially improve performance.
 
 ### Age Group Analysis
 
@@ -110,7 +110,7 @@ Adults make up the majority of visits (5,489) but Children show the highest admi
 | Adults | 5,489 | 49.7% | 35.25 mins |
 | Seniors | 1,617 | 49.7% | 35.21 mins |
 
-Children arriving at the ER are marginally more likely to be admitted than adults — a finding that argues for dedicated paediatric triage pathways to avoid mixing high-risk child cases with the general adult flow.
+Children arriving at the ER are marginally more likely to be admitted than adults - a finding that argues for dedicated paediatric triage pathways to avoid mixing high-risk child cases with the general adult flow.
 
 ### Satisfaction Data Gap
 
@@ -120,10 +120,10 @@ Children arriving at the ER are marginally more likely to be admitted than adult
 
 ## Root Cause Analysis
 
-1. **Capacity constraint is universal, not localised** — the consistency of wait times across departments indicates the bottleneck is total throughput capacity, not any individual clinical area
-2. **Demand is unpredictable across the full 24-hour window** — late-night and early-morning surges match daytime peaks, making traditional shift patterns a poor fit for actual demand
-3. **50% admission rate creates continuous downstream pressure** — half of all ER patients are transitioning to wards, creating a chronic bed management problem that the ER alone cannot solve
-4. **Satisfaction data is too sparse to act on** — the 72.7% missing score rate means the patient experience is essentially unmeasured at current collection rates
+1. **Capacity constraint is universal, not localised** - the consistency of wait times across departments indicates the bottleneck is total throughput capacity, not any individual clinical area
+2. **Demand is unpredictable across the full 24-hour window** - late-night and early-morning surges match daytime peaks, making traditional shift patterns a poor fit for actual demand
+3. **50% admission rate creates continuous downstream pressure** - half of all ER patients are transitioning to wards, creating a chronic bed management problem that the ER alone cannot solve
+4. **Satisfaction data is too sparse to act on** - the 72.7% missing score rate means the patient experience is essentially unmeasured at current collection rates
 
 ---
 
@@ -140,7 +140,7 @@ Children arriving at the ER are marginally more likely to be admitted than adult
 ## Recommendations
 
 **1. Demand-aligned staffing model**
-Replace fixed shift patterns with a demand-responsive rota built from the heat map data. The 23:00, 07:00, and 13:00 peak hours — plus Monday as the consistently highest-volume day — should anchor staffing decisions, not generic shift templates.
+Replace fixed shift patterns with a demand-responsive rota built from the heat map data. The 23:00, 07:00, and 13:00 peak hours — plus Monday as the consistently highest-volume day - should anchor staffing decisions, not generic shift templates.
 
 **2. Address the bed pipeline, not just the ER**
 With 50% of patients being admitted, ER wait time improvement is fundamentally linked to ward bed availability. Reducing ER dwell time requires a coordinated discharge acceleration programme upstream, not just ER-side changes.
