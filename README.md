@@ -184,5 +184,5 @@ Dashboard design inspired by a tutorial on the [Abdelytics](https://www.youtube.
 
 ## About
 
-Built by **Charles Edeki** — Data Analyst & Educator | Abuja, Nigeria
+Built by **Charles Edeki**
 📧 charlesedeki093@gmail.com | [LinkedIn](https://www.linkedin.com/in/charles-edeki/) | [GitHub](https://github.com/CharlesEdeki)
