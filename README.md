@@ -81,7 +81,7 @@ An interactive Power BI dashboard analysing **9,216 emergency room visits** acro
 
 ## Credits
 
-Dashboard design inspired by a tutorial on the [Data with Decision YouTube channel](https://youtu.be/Q8ftOjqfQSg?si=b3rqLDtT1-QVJces). Data analysis and insights are my own work.
+Dashboard design inspired by a tutorial on the [Abdelytics](https://www.youtube.com/watch?v=Q8ftOjqfQSg&t=4679s). Data analysis and insights are my own work.
 
 ---
 
